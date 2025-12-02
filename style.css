@@ -1,0 +1,105 @@
+     /* Paleta de Cores */
+        :root {
+            --cor-principal: #003366; /* Azul Marinho Escuro */
+            --cor-secundaria: #1E90FF; /* Azul Médio */
+            --fundo-padrao: #FFFFFF;
+            --fundo-secao: #F5F5F5; /* Cinza claro suave */
+            --fundo-destaque: #E6F0FF; /* Azul muito claro */
+            --cor-texto-destaque: #D2691E; /* Cobre (para datas) */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna */
+            margin: 0;
+            padding: 0;
+            background-color: var(--fundo-padrao);
+            color: #000000;
+        }
+        
+        /* 1. Título Central e Acentuado */
+        h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: var(--cor-principal);
+            text-align: center;
+            padding: 20px 0;
+            background-color: var(--fundo-destaque);
+            border-bottom: 5px solid var(--cor-secundaria);
+            margin-bottom: 30px;
+        }
+
+        /* 2. Consistência nos Títulos H2 (Melhoria) */
+        h2 {
+            font-size: 1.5em;
+            color: var(--cor-principal); /* Cor consistente para todos os títulos */
+            border-left: 5px solid var(--cor-secundaria);
+            padding-left: 15px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        /* Estilização para as áreas de conteúdo */
+        section {
+            padding: 0 5%;
+            margin: 20px auto;
+            max-width: 900px;
+        }
+
+        /* 5. Seção de Próximos Eventos com Fundo Sutil (ID) */
+        #upcoming-events-section {
+            background-color: var(--fundo-secao);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        li {
+            padding: 8px 0;
+            border-bottom: 1px dotted #ccc;
+        }
+        
+        /* 3. Destaque das Datas (agora mais suave) */
+        li span {
+            font-weight: 700;
+            color: var(--cor-texto-destaque); /* Cobre para contraste, mas não agressivo */
+            background-color: rgba(255, 255, 255, 0.5); /* Fundo leve para o destaque */
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        /* 5. Estilo para eventos ao ar livre (outdoor - Classe) */
+        .outdoor {
+            background-color: #E6F7FF; /* Azul claro para sugerir "céu aberto" */
+            padding: 10px 15px;
+            border-left: 5px solid var(--cor-secundaria);
+            border-radius: 5px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        
+        /* 7. Estilo para a seção de Contato (Classe) */
+        .contact-section {
+            background-color: var(--fundo-destaque);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        /* 4. Estilo para links interativos de contato */
+        .contact-link {
+            display: block;
+            margin-top: 8px;
+            color: var(--cor-principal);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-link:hover {
+            color: var(--cor-secundaria);
+            text-decoration: underline;
+        }
